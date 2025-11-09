@@ -259,7 +259,7 @@ export default function DashboardPage() {
                     return (
                       <tr
                         key={machineId}
-                        onClick={() => handleRowClick(machineId)}
+                        onClick={() => machineId&&handleRowClick(machineId)}
                         className="hover:bg-gray-50 cursor-pointer transition-colors"
                       >
                         <td className="px-4 md:px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
@@ -290,7 +290,7 @@ export default function DashboardPage() {
                             </button>
                             <button
                             
-                              onClick={(e) => handleDelete(e, machineId, machine.name)}
+                              onClick={(e) => machineId&&handleDelete(e, machineId, machine.name)}
                               className="text-red-600 hover:text-red-900"
                             >
                               Delete
