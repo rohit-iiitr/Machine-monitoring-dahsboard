@@ -10,7 +10,7 @@ async function bootstrap() {
     
     // Enable CORS for frontend
     app.enableCors({
-      origin: 'http://localhost:3000',
+      origin: 'https://machine-monitoring-dahsboard.vercel.app',
       credentials: true,
     });
 
